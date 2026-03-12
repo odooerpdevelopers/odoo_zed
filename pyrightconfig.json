@@ -1,0 +1,36 @@
+{
+    "typeCheckingMode": "basic",
+    "pythonVersion": "3.12", // your python version
+    "pythonPlatform": "Darwin", // change to "Linux" or "Windows" as needed
+    "venvPath": ".",
+    "venv": "venv", // this is your virtual environment for odoo (python -m venv venv)
+    "extraPaths": [
+        "odoo",
+        "odoo/addons",
+        "enterprise", // if you have enterprise addons
+        "extra-addons" // if you have extra addons
+    ],
+    "include": [
+        "extra-addons" // if you have extra addons
+    ],
+    "ignore": [ // paths to ignore, change as needed
+        "odoo", 
+        "data",
+        "config",
+        "enterprise",
+        "venv",
+        "**/__pycache__",
+        "**/__manifest__.py"
+    ],
+    "reportArgumentType": "none",
+    "reportGeneralTypeIssues": "none",
+    //"reportAssignmentType": "none",
+    "reportAttributeAccessIssue": "none",
+    "reportOptionalMemberAccess": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportUnknownVariableType": "none",
+    "reportMissingTypeStubs": "none",
+    "reportOperatorIssue": "none",
+    "reportIndexIssue": "none",
+}

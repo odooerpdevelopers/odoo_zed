@@ -1,0 +1,19 @@
+[
+    {
+        "label": "Run Odoo 19",
+        "command": "python",
+        "args": ["odoo/odoo-bin", "--config=config/odoo.conf"],
+        "use_new_terminal": true,
+    },
+    {
+        "label": "Odoo 19 Update App",
+        "command": "python",
+        "args": [
+            "odoo/odoo-bin",
+            "--config=config/odoo.conf",
+            "--database=your_database_name",
+            "--update=my_module",
+        ],
+        "use_new_terminal": true,
+    }
+]

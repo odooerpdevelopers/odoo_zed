@@ -1,0 +1,73 @@
+{
+  "tab_size": 4,
+  "hard_tabs": false,
+  "preferred_line_length": 88,
+  "format_on_save": "on",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/__pycache__",
+    "**/*.pyc",
+    "**/.pytest_cache",
+    "**/.venv",
+    "**/.idea",
+    "**/.vscode",
+    "**/venv",
+    "**/.ruff_cache",
+    "**/.DS_Store",
+    //"**/enterprise",
+    "**/filestore",
+    "**/odoo/doc",
+  ],
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright.analysis": {
+          "typeCheckingMode": "basic",
+          "pythonVersion": "3.12",
+          "venvPath": ".",
+          "venv": "venv",
+          "useLibraryCodeForTypes": true,
+          "autoSearchPaths": true,
+          "autoImportCompletions": true,
+          "reportMissingImports": "warning",
+          "reportMissingTypeStubs": false,
+          "reportUnknownMemberType": false,
+          "reportUnknownArgumentType": false,
+          "reportUnknownVariableType": false,
+          "reportAttributeAccessIssue": false,
+          "reportGeneralTypeIssues": false,
+        },
+      },
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "configurationPreference": "filesystemFirst",
+          "lineLength": 88,
+        },
+      },
+    },
+  },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "show_wrap_guides": true,
+      "wrap_guides": [88],
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+      "language_servers": ["basedpyright", "ruff"],
+    },
+    "XML": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "formatter": "prettier",
+    },
+  },
+}

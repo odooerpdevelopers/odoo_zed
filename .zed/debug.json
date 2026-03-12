@@ -1,0 +1,10 @@
+[
+    {
+        "label": "Zed Debug Odoo 19",
+        "adapter": "Debugpy",
+        "request": "launch",
+        "program": "odoo/odoo-bin",
+        "args": ["--config=config/odoo.conf", "--database=odoo19"],
+        "justMyCode": false,
+    },
+]
