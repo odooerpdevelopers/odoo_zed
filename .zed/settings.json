@@ -67,6 +67,11 @@
     "XML": {
       "tab_size": 4,
       "format_on_save": "on",
+      "formatter": "prettier", //requiere tener prettier local instalado en proyecto (ver video o comandos en readme)
+    },
+    "HTML": {
+      "tab_size": 4,
+      "format_on_save": "on",
       "formatter": "prettier",
     },
   },
